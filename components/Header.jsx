@@ -58,7 +58,7 @@ const Header = () => {
         }`}
       >
         <Link href="/">
-          <Image src={isDarkMode ? assets.logo_dark : assets.logo} className="w-28 cursor-pointer mr-14" alt="" />
+          <Image src={assets.logo} className="w-28 cursor-pointer mr-14" alt="" />
         </Link>
 
         <div className="hidden md:flex items-center gap-4">
