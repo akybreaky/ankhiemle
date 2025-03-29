@@ -23,7 +23,8 @@ const MobileNav = () => {
             </SheetTrigger>
             <SheetContent
                 side="right"
-                className={"flex flex-col transition-transform shadow-lg bg-white text-gray-800"}
+                className={`flex flex-col transition-transform shadow-lg
+                bg-white text-gray-800
                 data-[state=closed]:translate-x-full data-[state=open]:translate-x-0
                 data-[state=open]:duration-500 data-[state=closed]:duration-400
                 data-[state=open]:ease-out data-[state=closed]:ease-in`}>
@@ -41,7 +42,6 @@ const MobileNav = () => {
                                 href={link.path}
                                 className={`text-xl capitalize transition-all ${
                                     link.path === pathname
-                                        "text-gray-600"
                                 }`}
                             >
                                 {link.name}
