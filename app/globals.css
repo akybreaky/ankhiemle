@@ -13,24 +13,3 @@
 body {
   @apply bg-white text-black transition-colors duration-300;
 }
-
-.dark body {
-  @apply bg-gray-900 text-white transition-colors duration-300;
-}
-
-.dark a {
-  @apply text-white;
-}
-
-.dark input{
-  @apply bg-gray-800 text-white;
-}
-
-.dark textarea {
-  @apply bg-gray-800;
-}
-
-
-.colorW{
-  color: black;
-}
