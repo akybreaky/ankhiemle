@@ -9,13 +9,6 @@
   font-family: Outfit, serif;
 }
 
-@media (max-width: 768px) {
-  body {
-    transform: scale(0.85);
-    transform-origin: top;
-  }
-}
-
 body {
   @apply bg-white text-black transition-colors duration-300;
 }
