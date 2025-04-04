@@ -21,20 +21,12 @@ const MobileNav = () => {
     return (
         <Sheet>
             <SheetTrigger className="flex justify-center items-center outline-none focus:ring-0 focus:outline-none">
-<<<<<<< HEAD
                 <CiMenuFries className={`text-[32px] ${isDarkMode ? "text-white" : "text-gray-700"}`} />
-=======
-                <CiMenuFries className={`text-[32px] text-gray-700`} />
->>>>>>> c9ce76a16f18309ef78486fd23e6a0ebca17bdad
             </SheetTrigger>
             <SheetContent
                 side="right"
                 className={`flex flex-col transition-transform shadow-lg
-<<<<<<< HEAD
                 ${isDarkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"} 
-=======
-                bg-white text-gray-800
->>>>>>> c9ce76a16f18309ef78486fd23e6a0ebca17bdad
                 data-[state=closed]:translate-x-full data-[state=open]:translate-x-0
                 data-[state=open]:duration-500 data-[state=closed]:duration-400
                 data-[state=open]:ease-out data-[state=closed]:ease-in`}>
@@ -51,11 +43,7 @@ const MobileNav = () => {
                             <Link
                                 href={link.path}
                                 className={`text-xl capitalize transition-all ${
-<<<<<<< HEAD
                                     link.path === pathname ? (isDarkMode ? "text-white" : "text-gray-600") : ""
-=======
-                                    link.path === pathname
->>>>>>> c9ce76a16f18309ef78486fd23e6a0ebca17bdad
                                 }`}
                             >
                                 {link.name}
