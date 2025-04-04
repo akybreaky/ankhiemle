@@ -12,6 +12,7 @@
 body {
   @apply bg-white text-black transition-colors duration-300;
 }
+<<<<<<< HEAD
 
 .dark body {
   @apply bg-gray-900 text-white transition-colors duration-300;
@@ -20,3 +21,5 @@ body {
 .dark a {
   @apply text-white;
 }
+=======
+>>>>>>> c9ce76a16f18309ef78486fd23e6a0ebca17bdad
