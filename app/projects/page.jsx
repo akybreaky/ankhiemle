@@ -2,12 +2,13 @@ import { assets } from "@/assets/assets"
 import Image from "next/image"
 import Footer from "@/components/Footer"
 
+
 const projectsList = [
   {
     title: "Portfolio Website",
     description: "React JS, Next JS, Tailwind CSS",
     bgImage: "/work-1.png",
-    link: "https://github.com/akybreaky/ankhiemle.github.io",
+    link: "https://github.com/akybreaky/ankhiemle",
   },
   {
     title: "Pet Adoption Website",
@@ -15,9 +16,15 @@ const projectsList = [
     bgImage: "/work-2.png",
     link: "https://github.com/akybreaky/pet-website",
   },
+  {
+    title: "Video Edits Portfolio",
+    description: "Adobe After Effects",
+    bgImage: "/work-3.png",
+    link: "https://streamable.com/c/urngsf?src_collection=copy_link",
+  },
 ];
 
-const projects = ({isDarkMode}) => {
+const projects = () => {
     return (
       <div id="projects" className="w-full px-[12%] py-30">
 
@@ -45,7 +52,7 @@ const projects = ({isDarkMode}) => {
                   <h2 className="font-semibold font-outfit">{project.title}</h2>
                   <p className="text-sm text-gray-700">{project.description}</p>
                 </div>
-                <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2x_2x_0_#000] group-hover:bg-[#46baed] transition">
+                <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2x_2x_0_#000] group-hover:bg-[#e8f8ff] transition">
                   <a href={project.link} target="_blank" rel="noopener noreferrer" >
                   <Image src={assets.send_icon} alt="" className="w-5"/>
                   </a>
@@ -55,8 +62,8 @@ const projects = ({isDarkMode}) => {
           ))}
         </div>
 
-        <a className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500">
-          Coming soon <Image src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} alt="right arrow" className="w-4"/>
+        <a className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 duration-500">
+          More coming soon →
         </a>
 
         <div className="h-4">

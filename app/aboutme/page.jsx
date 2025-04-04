@@ -4,13 +4,15 @@ import { assets } from "@/assets/assets";
 import Image from "next/image";
 import SpotifyCarousel from "@/components/SpotifyCarousel";
 import Footer from "@/components/Footer";
+import { useContext } from "react";
+import { ThemeContext } from "@/components/ThemeContext";
 
 const infoList = [
   {
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
-    description: "Co-op Computer Science at Concordia University.\n2023-2026",
+    description: "Co-op Computer Science at Concordia University. 2024-2027 (expected)",
   },
   {
     icon: assets.code_icon,
@@ -26,7 +28,10 @@ const infoList = [
   },
 ]
 
+
+
 const aboutme = () => {
+  const { isDarkMode } = useContext(ThemeContext);
   
     return (
       <div className="w-full px-[12%] py-30">
@@ -45,10 +50,10 @@ const aboutme = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
           {infoList.map(({icon, iconDark, title, description}, index) => {
-            return <div className="border-[0.5px] border-gray-400 rounded-xl p-6 hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500" key={index}>
-              <Image src={icon} alt={title} className="w-7 mt-3"/>
+            return <div className={isDarkMode ? "border-[0.5px] border-gray-400 rounded-xl p-6 hover:bg-gray-800 hover:-translate-y-1 duration-500" : "border-[0.5px] border-gray-400 rounded-xl p-6 hover:bg-[#e8f8ff] hover:-translate-y-1 duration-500"} key={index}>
+              <Image src={isDarkMode ? iconDark : icon} alt={title} className="w-7 mt-3"/>
               <h3 className="my-4 font-semibold">{title}</h3>
-              <p className="text-gray-600 text-sm">{description}</p>
+              <p className={isDarkMode ? 'text-white text-sm': 'text-gray-600 text-sm'}>{description}</p>
             </div>
           })}
           </div> 

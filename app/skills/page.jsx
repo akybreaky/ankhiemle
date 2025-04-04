@@ -1,7 +1,10 @@
+"use client";
+
 import { assets } from "@/assets/assets"
 import Image from "next/image"
 import Footer from "@/components/Footer"
-import { motion } from "motion/react";
+import { ThemeContext } from "@/components/ThemeContext"
+import { useContext } from "react";
 
 const skillsList = [
   {
@@ -30,7 +33,8 @@ const skillsList = [
   },
 ];
 
-const skills = ({isDarkMode}=isDarkMode) => {
+const skills = () => {
+  const { isDarkMode, setIsDarkMode } = useContext(ThemeContext);
     return (
       <div id="skills" className="w-full px-[12%] py-30">
         <h4 className="text-center mb-3 text-lg">
@@ -53,10 +57,10 @@ const skills = ({isDarkMode}=isDarkMode) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 my-10">
           {skillsList.map(({icon, iconDark, title, description}, index) => (
             <div key={index}
-            className="border border-gray-600 rounded-lg px-8 py-12 hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+            className={isDarkMode ? "border border-white rounded-lg px-8 py-12 hover:bg-gray-800 hover:-translate-y-1 duration-300" : "border border-gray-600 rounded-lg px-8 py-12 hover:bg-[#e8f8ff] hover:-translate-y-1 duration-300"}>
               <Image src={isDarkMode ? iconDark : icon} alt="" className="w-10"/>
-              <h3 className="text-lg my-4 text-gray-700">{title}</h3>
-              <p className="text-sm text-gray-600 leading-5">{description}</p>
+              <h3 className={isDarkMode ? "text-lg my-4 text-WHITE": "text-lg my-4 text-gray-700"}>{title}</h3>
+              <p className={isDarkMode ? "text-sm text-white leading-5": "text-sm text-gray-600 leading-5"}>{description}</p>
             </div>
           ))}
         </div>

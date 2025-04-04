@@ -4,6 +4,8 @@ import { assets } from "@/assets/assets"
 import Image from "next/image"
 import Footer from "@/components/Footer"
 import React, {useState} from "react"
+import { ThemeContext } from "@/components/ThemeContext"
+import { useContext } from "react";
 
 
 const contact = () => {
@@ -33,6 +35,8 @@ const contact = () => {
     }
   };
 
+  const { isDarkMode, setIsDarkMode } = useContext(ThemeContext);
+
     return (
       <div id="contact" className="w-full px-[12%] py-30">
         <h4 className="text-center mb-3 text-lg">
@@ -53,15 +57,15 @@ const contact = () => {
 
         <form onSubmit={onSubmit} className="max-w-2xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg: gap-6 mt-10 mb-8">
-            <input type="text" placeholder="Enter your name" required className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:text-black" name="name"/>
+            <input type="text" placeholder="Enter your name" required className={isDarkMode ? "flex-1 p-3 outline-none border-[0.5px] border-white rounded-md bg-gray-800 text-white" : "flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"} name="name"/>
 
             <input type="email" placeholder="Enter your email" required 
-            className="flex-1 p-3 outline-none border-[0.5px]  border-gray-400 rounded-md bg-white dark:text-black" name="email"/>
+            className={isDarkMode ? "flex-1 p-3 outline-none border-[0.5px] border-white rounded-md bg-gray-800 text-white" : "flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white text-gray-600"} name="email"/>
           </div>
 
-          <textarea rows="6" placeholder="Enter your message" required className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6" name="message"></textarea>
+          <textarea rows="6" placeholder="Enter your message" required className={isDarkMode ? "w-full p-4 outline-none border-[0.5px] border-white rounded-md bg-gray-800 mb-6 text-white" : "w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 text-gray-600"} name="message"></textarea>
 
-          <button type="submit" className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-[#000] duration-500 ">Submit <Image src={assets.right_arrow_white} alt="" className="w-4"/></button>
+          <button type="submit" className={isDarkMode ? "py-3 px-8 w-max flex items-center justify-between gap-2 bg-gray-800/80 text-white rounded-full mx-auto hover:bg-gray-700 duration-500" : "py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-[#000] duration-500"}>Submit <Image src={assets.right_arrow_white} alt="" className="w-4"/></button>
 
           <p className="mt-4">{result}</p>
         </form>

@@ -9,7 +9,6 @@
   font-family: Outfit, serif;
 }
 
-
 body {
   @apply bg-white text-black transition-colors duration-300;
 }
@@ -20,17 +19,4 @@ body {
 
 .dark a {
   @apply text-white;
-}
-
-.dark input{
-  @apply bg-gray-800 text-white;
-}
-
-.dark textarea {
-  @apply bg-gray-800;
-}
-
-
-.colorW{
-  color: black;
 }

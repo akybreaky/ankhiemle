@@ -1,30 +1,38 @@
 import React, { useState } from "react";
 import Spotify from "./Spotify";
+import { useContext } from "react";
+import { ThemeContext } from "@/components/ThemeContext";
 
 const SpotifyCarousel = () => {
   const tracks = [
     {
-      link: "https://open.spotify.com/track/1aKvZDoLGkNMxoRYgkckZG?si=6b5ec89a533f46a7",
-      title: "Magnetic by Illit",
-      description: "Described as a dance song with elements of pluggnb and house genre, it is characterized by arpeggio synths and dynamic bass, with lyrics about comparing the heart that runs at full speed towards the person [you] likes to a magnet."
+      link: "https://open.spotify.com/track/4D2DFuqs2PwLiHbcf6CX47?si=8463d1573ff3424a",
+      title: "Hampstead by Ariana Grande",
+      description: "\"Hampstead\" is a song with a modern twist.  It begins with a piano, but not the clean, cozy type you'd find in an empty bar.  Instead, it has a murky, chorused feel, almost if it came from outer space.  This distinct sound flows perfectly into the second part of the music, creating an ethereal ambiance."
     },
     {
-      link: "https://open.spotify.com/track/3coRPMnFg2dJcPu5RMloa9?si=fd04101e483f4c64",
-      title: "Whiplash by aespa",
-      description: "a EDM-based song featuring strong and fast-paced bass and house beats with lyrics about moving forward without hesitation with your own standards and criteria without being confined by a frame."
+      link: "https://open.spotify.com/track/0YJVQS3v3ocOMPzVy9yuXE?si=d63d79d1fd684322",
+      title: "BTG by KiiiKiii",
+      description: "\"BTG\" combines elegant rap elements with dreamy synth arpeggios and funky bass sounds.  It captures their trademark sound, creating a captivating listening experience that is both refined and enjoyable."
     },
     {
-      link: "https://open.spotify.com/track/38tXZcL1gZRfbqfOG0VMTH?si=d6142fd2bff747aa",
-      title: "How Sweet by NewJeans",
-      description: "A song that blends Miami bass and electropop elements, showcasing a vibrant and hip-hop-influenced sound."
+      link: "https://open.spotify.com/track/6efcMTYO2lJ0zcpQEPk8m1?si=0def4dc3bccb471f",
+      title: "Come Over by LE SSERAFIM",
+      description: "It is a dreamy retro-sounding nu jazz and bossa nova song with lyrics that are \"flirty, carefree, and a tad sulty\" about tempting a lover to release their inhibitions and dance with them."
     },
     {
-        link: "https://open.spotify.com/track/1a19jsjG2DvbN1fVJonKUU?si=a8bb2d458b59422a",
-        title: "Beaches by beabadobee",
-        description: "Beabadoobee's song Beaches blends elements of indie rock and pop, creating a sunny, upbeat, and refreshing sound that some describe as a 2000s indie rock banger with a serene, self-love theme."
+        link: "https://open.spotify.com/track/3L0JDlycMhSA7R0M0OfNIY?si=92b0be02666e4a81",
+        title: "Ay No Puedo by The Marías",
+        description: "The Marías describe their tenth-track, Ay No Puedo, as a bittersweet song because \"Ay, No Puedo\" can mean that the love is so immense, that I can't contain it inside of me or it could've meant \"Oh, this pain is too much for me to handle\"."
     },
+    {
+      link: "https://open.spotify.com/track/2tej1KSqNuxwywIpY1rDRc?si=99c0ecc9d27e431a",
+      title: "Hide and Seek by Imogen Heap",
+      description: "\"Hide and Seek\" by Imogen Heap is a folktronica ballad that uses a cappella vocals and a harmonizer to convey a sense of loss and the pain of separation, often interpreted as a reflection on a breakup or divorce. The use of vocoder effects creates a unique sound that enhances the emotional impact of the song. Note: Imogen Heap inspired me to combine two of my hobbies: music and coding. Seeing her use the vocodder in her live performances is truly inspiring."
+  },
   ];
 
+  const { isDarkMode } = useContext(ThemeContext);
   const [currentTrack, setCurrentTrack] = useState(0);
 
   const prevTrack = () => {
@@ -41,7 +49,7 @@ const SpotifyCarousel = () => {
       <div className="flex items-center justify-center gap-x-4">
         <button 
           onClick={prevTrack} 
-          className="px-2 py-1 bg-gray-300 dark:bg-gray rounded-full hover:bg-gray-400 text-sm sm:text-base flex items-center justify-center dark:text-black"
+          className={isDarkMode ? "px-2 py-1 bg-gray-700 rounded-full hover:bg-gray-600 text-sm sm:text-base flex items-center justify-center text-white": "px-2 py-1 bg-gray-300 rounded-full hover:bg-gray-400 text-sm sm:text-base flex items-center justify-center"}
         >
           ←
         </button>
@@ -52,7 +60,7 @@ const SpotifyCarousel = () => {
 
         <button 
           onClick={nextTrack} 
-          className="px-2 py-1 bg-gray-300 rounded-full hover:bg-gray-400 text-sm sm:text-base flex items-center justify-center dark:text-black"
+          className={isDarkMode ? "px-2 py-1 bg-gray-700 rounded-full hover:bg-gray-600 text-sm sm:text-base flex items-center justify-center text-white": "px-2 py-1 bg-gray-300 rounded-full hover:bg-gray-400 text-sm sm:text-base flex items-center justify-center"}
         >
           →
         </button>
@@ -63,7 +71,9 @@ const SpotifyCarousel = () => {
       {tracks.map((_, index) => (
           <span 
             key={index} 
-            className={`w-3 h-3 rounded-full ${index === currentTrack ? "bg-gray-800" : "bg-gray-400"} transition-all duration-300`}
+            className={`w-3 h-3 rounded-full ${index === currentTrack 
+            ? isDarkMode ? "bg-white" : "bg-gray-800" 
+            : isDarkMode ? "bg-gray-800" : "bg-gray-400"} transition-all duration-300`}
           />
         ))}
       </div>
@@ -71,7 +81,7 @@ const SpotifyCarousel = () => {
       {/* Song Title & Description */}
       <div className="text-center">
         <h3 className="text-lg font-semibold">{tracks[currentTrack].title}</h3>
-        <p className="text-gray-700 text-sm md:w-100">{tracks[currentTrack].description}</p>
+        <p className={isDarkMode ? 'text-white text-sm md:w-100' : 'text-gray-700 text-sm md:w-100'}>{tracks[currentTrack].description}</p>
       </div>
     </div>
   );
