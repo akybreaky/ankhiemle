@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
     return (
       <html lang="en" className={`scroll-smooth`}>
         <head>
-        <meta name="viewport" content="width=device-width, initial-scale=0.85"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         </head>
         <ThemeProvider>
         <body className="bg-white dark:bg-gray-900 text-black dark:text-white antialiased">
