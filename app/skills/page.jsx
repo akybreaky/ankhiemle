@@ -11,7 +11,7 @@ const skillsList = [
     icon: assets.languages_icon,
     iconDark: assets.languages_icon_dark,
     title: "Programming Languages",
-    description: "Java, Python, C, JavaScript, Clojure.",
+    description: "Java, Python, C, JavaScript, Clojure, Assembly x86.",
   },
   {
     icon: assets.languages_icon,
@@ -29,7 +29,7 @@ const skillsList = [
     icon: assets.languages_icon,
     iconDark: assets.languages_icon_dark,
     title: "Developer Tools",
-    description: "Visual Studio Code, Eclipse, GitHub.",
+    description: "Visual Studio Code, Eclipse, Git, GitHub.",
   },
 ];
 

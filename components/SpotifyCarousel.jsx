@@ -16,19 +16,19 @@ const SpotifyCarousel = () => {
       description: "\"BTG\" combines elegant rap elements with dreamy synth arpeggios and funky bass sounds.  It captures their trademark sound, creating a captivating listening experience that is both refined and enjoyable."
     },
     {
-      link: "https://open.spotify.com/track/6efcMTYO2lJ0zcpQEPk8m1?si=0def4dc3bccb471f",
-      title: "Come Over by LE SSERAFIM",
-      description: "It is a dreamy retro-sounding nu jazz and bossa nova song with lyrics that are \"flirty, carefree, and a tad sulty\" about tempting a lover to release their inhibitions and dance with them."
+      link: "https://open.spotify.com/track/4t9PBD27dndlf6YMBK2ROc?si=995f20b0697a49de",
+      title: "Track 10 by Charli XCX",
+      description: "\"Track 10\" is a remix of the previously unrelkeased song \"Blame it on Your Love,\" making it the only song on the project. Hyperpop, experimental, pop in general — there's so much going on here and it's incredible."
     },
     {
-        link: "https://open.spotify.com/track/3L0JDlycMhSA7R0M0OfNIY?si=92b0be02666e4a81",
-        title: "Ay No Puedo by The Marías",
-        description: "The Marías describe their tenth-track, Ay No Puedo, as a bittersweet song because \"Ay, No Puedo\" can mean that the love is so immense, that I can't contain it inside of me or it could've meant \"Oh, this pain is too much for me to handle\"."
+        link: "https://open.spotify.com/track/4E0P1xs3JNmsNr5c5nFTZJ?si=c1bb9813601c4a06",
+        title: "Back to Me by The Marías",
+        description: "\"Back to me\" is what comes after — the breakup actually happens when an ex moves on to someone new. It deals with the emotions that come along with that. Even though in the end you may not want them back at all, in the moment, that's all you want to relieve the pain."
     },
     {
-      link: "https://open.spotify.com/track/2tej1KSqNuxwywIpY1rDRc?si=99c0ecc9d27e431a",
-      title: "Hide and Seek by Imogen Heap",
-      description: "\"Hide and Seek\" by Imogen Heap is a folktronica ballad that uses a cappella vocals and a harmonizer to convey a sense of loss and the pain of separation, often interpreted as a reflection on a breakup or divorce. The use of vocoder effects creates a unique sound that enhances the emotional impact of the song. Note: Imogen Heap inspired me to combine two of my hobbies: music and coding. Seeing her use the vocodder in her live performances is truly inspiring."
+      link: "https://open.spotify.com/track/2s6Jh6GmDhAOsSMII07fVs?si=f2e9749263aa4f0d",
+      title: "Tonight by PinkPantheress",
+      description: "Kicking off her year in style, PinkPantheress returns with her latest track \"Tonight\", a spellbinding blend of breakbeats, garage, house, and trip hop."
   },
   ];
 
