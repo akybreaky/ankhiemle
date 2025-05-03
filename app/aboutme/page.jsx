@@ -18,13 +18,13 @@ const infoList = [
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
     title: "Interests",
-    description: "UX/UI Design, AI Systems, Machine Learning, Web Development",
+    description: "UX/UI Design, AI Systems, Machine Learning, Web Development, Creative Design.",
   },
   {
     icon: assets.project_icon,
     iconDark: assets.project_icon_dark,
     title: "Hobbies",
-    description: "Video Games, Reading, Movies/TV, Video Editing, Working Out",
+    description: "Reading books, playing video games, listening to music, watching movies, working out, coffee hopping, discovering hidden gems, trying out new cuisines.",
   },
 ]
 
@@ -45,7 +45,7 @@ const aboutme = () => {
         <section className="flex w-full flex-col items-center gap-20 my-20">
           <div className="flex-1">
             <p className="mb-10 max-w-2xl text-center mx-auto">
-            I am a second-year Computer Science student at Concordia University, enrolled in the Co-operative Education program. Previously, I pursued studies in commerce during my time at CEGEP. However, my desire to explore and excel in technology-driven fields led me to transition into computer science. I am a dedicated and passionate learner with a keen interest in discovering and mastering new technologies. My academic focus lies in software development, algorithms, and data structures, and I am committed to continuously expanding my knowledge and expertise in these areas.
+            I am a second-year Computer Science student at Concordia University, enrolled in the Co-operative Education program. Previously, I pursued studies in commerce during my time at CEGEP. However, my desire to explore and excel in technology-driven fields led me to transition into computer science. I am a dedicated and passionate learner with a keen interest in discovering and mastering new technologies. 
             </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">

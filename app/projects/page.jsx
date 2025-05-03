@@ -22,6 +22,12 @@ const projectsList = [
     bgImage: "/work-3.png",
     link: "https://streamable.com/c/urngsf?src_collection=copy_link",
   },
+  {
+    title: "ASL Hand Gesture Detection",
+    description: "Python, OpenCV, MediaPipe, scikit-learn",
+    bgImage: "/",
+    link: "https://github.com/akybreaky/ASL-Hand-Gesture-Detection",
+  },
 ];
 
 const projects = () => {
@@ -41,7 +47,7 @@ const projects = () => {
         <br></br>
 
         <p className="text-center max-w-2xl mx-auto mt-5 mb-12">
-        Through my projects, I've gained hands-on experience in web development using HTML, CSS, JavaScript, Node.js, React.js, and Next.js. I focus on clean design, responsive layouts, and efficient functionality, continuously refining my problem-solving skills.
+        A collection of personal and collaborative projects where I apply my coding skills to solve real-world problems, build creative tools, and continuously learn new technologies. Each project reflects my interest in clean, functional design and writing code that's both efficient and maintainable.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 my-10 dark:text-black">

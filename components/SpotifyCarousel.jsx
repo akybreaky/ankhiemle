@@ -6,30 +6,20 @@ import { ThemeContext } from "@/components/ThemeContext";
 const SpotifyCarousel = () => {
   const tracks = [
     {
-      link: "https://open.spotify.com/track/4D2DFuqs2PwLiHbcf6CX47?si=8463d1573ff3424a",
-      title: "Hampstead by Ariana Grande",
-      description: "\"Hampstead\" is a song with a modern twist.  It begins with a piano, but not the clean, cozy type you'd find in an empty bar.  Instead, it has a murky, chorused feel, almost if it came from outer space.  This distinct sound flows perfectly into the second part of the music, creating an ethereal ambiance."
+      link: "https://open.spotify.com/track/2jNyiavSywmA472t2m6ZBz?si=e6e58da4f5924f21",
+      title: "What Was That by Lorde",
+      description: "\"What Was That\" is a song that captures the essence of a fleeting moment, where the singer reflects on a past relationship and the emotions that come with it. The lyrics convey a sense of nostalgia and longing, while the production features dreamy synths and a catchy melody."
     },
     {
-      link: "https://open.spotify.com/track/0YJVQS3v3ocOMPzVy9yuXE?si=d63d79d1fd684322",
-      title: "BTG by KiiiKiii",
-      description: "\"BTG\" combines elegant rap elements with dreamy synth arpeggios and funky bass sounds.  It captures their trademark sound, creating a captivating listening experience that is both refined and enjoyable."
+      link: "https://open.spotify.com/track/3a9P1PqOV6gr4A9ywDZ7mg?si=7c3eeda1d05d477e",
+      title: "CUNTISSIMO by Marina",
+      description: "\"CUNTISSIMO\" is a song that celebrates femininity and empowerment, with lyrics that encourage self-love and confidence. The production features a mix of pop and electronic elements, creating an upbeat and catchy sound."
     },
     {
-      link: "https://open.spotify.com/track/4t9PBD27dndlf6YMBK2ROc?si=995f20b0697a49de",
-      title: "Track 10 by Charli XCX",
-      description: "\"Track 10\" is a remix of the previously unrelkeased song \"Blame it on Your Love,\" making it the only song on the project. Hyperpop, experimental, pop in general — there's so much going on here and it's incredible."
+      link: "https://open.spotify.com/track/7Fr2Q6q3rAxFUcMkuvVrXO?si=1f82fe272bb048c2",
+      title: "Stateside by PinkPantheress",
+      description: "\"Stateside\" is a song that explores the complexities of love and relationships, with lyrics that reflect on the challenges of being in a long-distance relationship. The production features a mix of pop and electronic elements, creating a dreamy and atmospheric sound."
     },
-    {
-        link: "https://open.spotify.com/track/4E0P1xs3JNmsNr5c5nFTZJ?si=c1bb9813601c4a06",
-        title: "Back to Me by The Marías",
-        description: "\"Back to me\" is what comes after — the breakup actually happens when an ex moves on to someone new. It deals with the emotions that come along with that. Even though in the end you may not want them back at all, in the moment, that's all you want to relieve the pain."
-    },
-    {
-      link: "https://open.spotify.com/track/2s6Jh6GmDhAOsSMII07fVs?si=f2e9749263aa4f0d",
-      title: "Tonight by PinkPantheress",
-      description: "Kicking off her year in style, PinkPantheress returns with her latest track \"Tonight\", a spellbinding blend of breakbeats, garage, house, and trip hop."
-  },
   ];
 
   const { isDarkMode } = useContext(ThemeContext);

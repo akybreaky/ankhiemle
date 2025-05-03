@@ -23,13 +23,13 @@ const skillsList = [
     icon: assets.languages_icon,
     iconDark: assets.languages_icon_dark,
     title: "Libraries & Frameworks",
-    description: "Node.js, React.js, Next.js.",
+    description: "Node.js, React.js, Next.js, Spring Boot, OpenCV, MediaPipe, scikit-learn.",
   },
   {
     icon: assets.languages_icon,
     iconDark: assets.languages_icon_dark,
     title: "Developer Tools",
-    description: "Visual Studio Code, Eclipse, Git, GitHub.",
+    description: "Visual Studio Code, Eclipse, Git, GitHub, pyenv.",
   },
 ];
 
