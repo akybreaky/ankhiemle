@@ -6,19 +6,24 @@ import { ThemeContext } from "@/components/ThemeContext";
 const SpotifyCarousel = () => {
   const tracks = [
     {
-      link: "https://open.spotify.com/track/2jNyiavSywmA472t2m6ZBz?si=e6e58da4f5924f21",
-      title: "What Was That by Lorde",
-      description: "\"What Was That\" is a song that captures the essence of a fleeting moment, where the singer reflects on a past relationship and the emotions that come with it. The lyrics convey a sense of nostalgia and longing, while the production features dreamy synths and a catchy melody."
+      link: "https://open.spotify.com/track/1hoeP1oPYlhcv6iRCtB7pT?si=dece6a83bd7f4bdb",
+      title: "Man of the Year by Lorde",
+      description: "\"Man Of The Year\' serves as the second single from Lorde's fourth album, Virgin. It follows her comeback, “What Was That.”"
     },
     {
-      link: "https://open.spotify.com/track/3a9P1PqOV6gr4A9ywDZ7mg?si=7c3eeda1d05d477e",
-      title: "CUNTISSIMO by Marina",
-      description: "\"CUNTISSIMO\" is a song that celebrates femininity and empowerment, with lyrics that encourage self-love and confidence. The production features a mix of pop and electronic elements, creating an upbeat and catchy sound."
+      link: "https://open.spotify.com/track/2Y2h2TYOEaNvSQVlhKUU5C?si=d35152ea7dbc4322",
+      title: "Nightmarish by Brandy Senki",
+      description: "Japanese Rock, J-Pop, Japanese Indie"
     },
     {
-      link: "https://open.spotify.com/track/7Fr2Q6q3rAxFUcMkuvVrXO?si=1f82fe272bb048c2",
-      title: "Stateside by PinkPantheress",
-      description: "\"Stateside\" is a song that explores the complexities of love and relationships, with lyrics that reflect on the challenges of being in a long-distance relationship. The production features a mix of pop and electronic elements, creating a dreamy and atmospheric sound."
+      link: "https://open.spotify.com/track/0hRr7x68aApt0TX1AIAA9W?si=e408d689cd984d07",
+      title: "깨어 (Are You Alive) by tripleS",
+      description: "tripleS unite together and use their powerful voices to remind the listeners about the simplicity of seeking happiness in the present than the past on “깨어 (Are You Alive)”, the title track coming off of their second full-group album ASSEMBLE25."
+    },
+    {
+      link: "https://open.spotify.com/track/7A6f6HJqsl5UdG7kBXzXSf?si=28e4024e6a3d4174",
+      title: "Heaven is a Home... by Kali Uchis",
+      description: "\"Heaven Is A Home\" is the stunning opening track from Kali Uchis's fifth studio album, Sincerely, and it serves as a powerful introduction to the emotional depth and lyrical vulnerability that permeate the entire project."
     },
   ];
 
